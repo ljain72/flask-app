@@ -29,4 +29,5 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build . --file Dockerfile --tag my-simple-app:${{ github.sha }} --tag my-simple-app:latest
-          docker push --all-tags ${DOCKER_USERNAME}/my-simple-app
+          
+        #docker push --all-tags ${DOCKER_USERNAME}/my-simple-app
